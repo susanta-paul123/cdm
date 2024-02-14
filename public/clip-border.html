@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shape {
+        width: 400px;
+        height: 40px;
+        background-color: black;
+        position: relative;
+      }
+      .shape:before {
+        content: '';
+        width: 398px;
+        height: 38px;
+        background: #00c000;
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+      }
+      .shape, .shape:before {
+        -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+        clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+      }
+    </style>
+</head>
+<body>
+    
+        
+      <div class="shape"></div>
+</body>
+</html>

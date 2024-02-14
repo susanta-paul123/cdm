@@ -1,0 +1,187 @@
+ /*-----------------------------------------------------------------------------------------------------------------------------
+     _                _  _     _                                      _      _                                       _    _
+    | |              ( )| |   | |                                    | |    | |                                     | |  | |
+  __| |  ___   _ __  |/ | |_  | |__    ___    __ _   ___    ___    __| |    | |__    ___    __ _  _ __   ___   __ _ | |_ | |
+ / _` | / _ \ | '_ \    | __| | '_ \  / _ \  / _` | / _ \  / _ \  / _` |    | '_ \  / _ \  / _` || '__| / _ \ / _` || __|| |
+| (_| || (_) || | | |   | |_  | |_) ||  __/ | (_| || (_) || (_) || (_| | _  | |_) ||  __/ | (_| || |   |  __/| (_| || |_ |_|
+ \__,_| \___/ |_| |_|    \__| |_.__/  \___|  \__, | \___/  \___/  \__,_|( ) |_.__/  \___|  \__, ||_|    \___| \__,_| \__|(_)
+                                              __/ |                     |/                  __/ |
+                                             |___/                                         |___/
+ksp----------------------------------------------------------------------------------------------------------------------------
+*/
+
+ //========================================// 
+ // Variables //
+ //========================================//  
+ $primary-color:#000!default;
+ $white: #ffffff !default; 
+ $light-gray:#E9E9E9;
+
+
+
+ // Documentation starts here
+ // --------------------------------------------
+ // * Global...............Globally-available variables and config.
+ * {
+     padding: 0; 
+     margin: 0;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     -webkit-overflow-scrolling: touch;
+ }
+
+ html {
+     height: 100%;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box; 
+ }
+
+ ::-webkit-input-placeholder,
+ input::-webkit-input-placeholder {
+    
+ }
+
+ ::-moz-placeholder,
+ input::-webkit-input-placeholder {
+    
+ }
+
+ :-ms-input-placeholder,
+ input:-ms-input-placeholder {
+    
+ }
+
+ :-moz-placeholder,
+ input:-moz-placeholder {
+    
+ }
+
+ /* Let's get this party started */
+
+ ::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: $primary-color;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+
+    &:window-inactive {
+        background-color: $primary-color;
+    }
+}
+
+ body.body {
+     font-family: 'Montserrat';
+     font-weight: 400;
+     min-height: 100%;
+     display: flex;
+     line-height: 1.5;
+     font-size: 16px; 
+     overflow: hidden auto;
+
+     a {
+         transition: all 0.3s linear;
+         text-decoration: none;
+        //  color: inherit;
+
+         &:hover,
+         &:focus {
+             outline: none !important;
+             box-shadow: none;
+             text-decoration: none;
+         }
+     }
+
+
+
+     h1, 
+     h2 {
+        font-family: 'Cinzel';
+     }
+
+     p {
+         
+         line-height: 26px;
+         letter-spacing: 0.44px;
+     }
+
+     h2,
+     .h2 {
+        font-size: 33.18px;
+        font-family: 'Cinzel';
+     }
+
+     .h3,
+     h3 {
+
+        font-family: 'Cinzel';
+        font-size: 23.18px;
+        
+     }
+
+     .h4,
+     h4 {
+        font-size: 18px; 
+        font-family: 'Cinzel'; 
+     }
+
+     .h5,
+     h5 {
+         
+     }
+
+     .h6,
+     h6 {
+         
+     }
+
+     .btn{
+        border-radius: 0;
+     }
+
+ }
+
+ main {
+     position: relative;
+     flex: 1 0 auto;
+ }
+
+ // * Global...............Globally-available Reusable LAYOUTS.
+ .page-wrapper {
+     flex: 1 1 auto;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     min-height: 100vh;
+     width: 100%;
+     overflow: hidden;
+ }
+
+ 
+
+ .main {
+     z-index: 2;
+     position: relative;
+ }
+
+ // Let the site building begin
+ // --------------------------------------------
+
+ @import "mixin-variables";
+ @import "plugins";
+ @import "pages/fonts";
+ @import "pages/header";
+ @import "pages/home";
+ @import "pages/inner-pages";
+ @import "pages/responsive";

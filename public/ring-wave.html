@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ui/stylesheet/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="ui/stylesheet/custom.css">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .pin-position{
+        position: relative;
+    }
+    .pins{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+       .pin{
+        width: 0;
+        height: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+       }
+       
+       
+        .fwpin{
+            display: none;
+            width: 91px;
+            height: 146px;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            /* background-color: brown; */
+        }
+        .fwopin{
+            display: block;
+            width: 28px;
+            height: 45px;
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            /* background-color: blueviolet; */
+            
+        }
+
+        .ring{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            animation-name: ring;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            border-width:1;
+            border-style: solid;
+            border-radius: 50%;
+            background-color: transparent;
+            box-shadow: 0px 0px 40px rgba(255,255,255,0.5);
+        }
+        
+        @keyframes ring {
+            0%   {width: 0; height: 0; opacity: 0; border-color:#fff;}
+            50%  {width: 60px; height: 60px; opacity: 1; border-color: transparent;}
+            100% {width: 0; height: 0; opacity: 0; border-color:#fff;}
+        }
+
+
+        .global-market-presence-section2{
+            background: rgb(99,98,98);
+            background: linear-gradient(180deg, rgba(99,98,98,1) 0%, rgba(0,0,0,1) 100%);
+            position: relative;
+            padding-top:70px;
+            padding-bottom: 70px;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+
+        .pin.pin1{
+            left: 44.5%;
+            top: 27%;
+        }
+        .pin.pin2{
+            left: 72.5%;
+            top: 46%;
+        }
+        .pin:hover .fwpin{
+            display: block;
+            z-index: 2;
+       }
+       .pin:hover .address-box{
+            display: block;
+            z-index: 2;
+       }
+    </style>
+</head>
+<body>
+   
+<section class="global-market-presence-section2">
+    <div class="container">
+        <div class="row justify-content-center text-center text-white mb-4">
+            <div class="col-lg-8">
+                <div class="title no-badge white  mb-4">
+                    <span></span>
+                    <h2>Global Markets Presence Available in almost 50 countries
+                    </h2>
+                    <span></span>
+                </div>
+                <p>The Global Choice for Equine Care Products At Carr Day Martin, we are committed to providing high-quality equine care products to horse owners around the world. Our products are available in almost 50 countries, and we continue to expand our global reach.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="containerfluid">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="pin-position">
+                    <div class="pins">
+                        <div class="pin pin1">
+                            <div class="address-box">
+                                <h5>Kilkenny</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin2">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin3">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin4">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin5">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin6">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin7">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin8">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin9">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin10">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin11">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin12">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin13">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin14">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                        <div class="pin pin15">
+                            <div class="address-box">
+                                <h5>Dubai</h5>
+                                <p>PurcellsInch Business Park, Unit 4, Kilkenny, R95 WV80, </p>
+                            </div>
+                            <div class="fwpin"><img src="ui/media/images/pin-active.png" alt=""></div>
+                            <div class="fwopin"><img src="ui/media/images/map_pin.png" alt=""></div>
+                            <div class="ring"></div>
+                        </div>
+                    </div>
+                    <img src="ui/media/images/map3.png" alt="" class="img-fluid">
+                </div>
+             </div>
+        </div>
+    </div>
+</section>
+    
+</body>
+</html>
